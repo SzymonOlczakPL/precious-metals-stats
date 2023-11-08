@@ -49,7 +49,7 @@ public class MezoviaAdapter implements Adapter<MezoviaProduct> {
         return ouncePattern.matcher(coinName)
                 .results()
                 .findFirst()
-                .map(m -> m.group(1))
+                .map(m -> nonNull(m.group(1)) ? m.group(1) : m.group(2))
                 .orElse(null);
     }
 

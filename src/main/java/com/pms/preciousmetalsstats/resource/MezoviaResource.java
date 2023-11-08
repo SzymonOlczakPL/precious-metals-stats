@@ -23,4 +23,9 @@ public class MezoviaResource {
         return mezoviaDao.getGoldCoinsProducts();
     }
 
+    @GetMapping("/silverCoins")
+    public List<PreciousMetalsDTO> getSilverCoins() {
+        return mezoviaDao.getSilverCoinsProducts();
+    }
+
 }

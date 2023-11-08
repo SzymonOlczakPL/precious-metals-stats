@@ -23,8 +23,6 @@ public class MezoviaProductDetails {
     @JsonProperty("taxes")
     private Tax tax;
 
-    private String unit;
-
     private Long amount;
 
     @JsonProperty("items")

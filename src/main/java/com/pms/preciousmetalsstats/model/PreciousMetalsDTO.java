@@ -1,12 +1,12 @@
 package com.pms.preciousmetalsstats.model;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @Builder
+@EqualsAndHashCode
+@ToString
 public class PreciousMetalsDTO {
     private String coinName;
     private String coinCompanyName;

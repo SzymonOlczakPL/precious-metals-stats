@@ -1,4 +1,4 @@
-package com.pms.preciousmetalsstats.adapter;
+package com.pms.preciousmetalsstats.model;
 
 public enum PreciousMetalsPlatforms {
     MEZOVIA
