@@ -2,3 +2,10 @@ steps:
   - name: 'gcr.io/cloud-builders/mvn'
     args: ['clean', 'install']
   - name: 'gcr.io/cloud-builders/docker'
+artifacts:
+  mavenArtifacts:
+    - repository: 'https://europe-central2-maven.pkg.dev/$PROJECT_ID/pms'
+      path: '/workspace/target/preciousMetalsStats.jar'
+      artifactId: 'build-artifact'
+      groupId: 'group-id'
+      version: 'version'
